@@ -1,0 +1,11 @@
+numpy
+matplotlib
+pandas
+imutils
+opencv-python
+torch
+tensorflow==1.13.1
+tensorboardX
+seaborn
+tqdm
+sklearn
