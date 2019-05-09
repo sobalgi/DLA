@@ -1,3 +1,7 @@
+# Author : Sourabh Balgi
+# Institution : IISc, Bangalore
+# Project : DLA - Diffusion Limited Aggregation.
+
 from dla import Brownian_Tree
 # from dla_19_05_05 import Brownian_Tree
 # from dla_19_05_01 import Brownian_Tree

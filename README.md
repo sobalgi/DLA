@@ -58,7 +58,7 @@ Once the tensorboard is running, using `localhost:6006` all the plots, figures a
 - Tensorboard Images Tab : ![Tensorboard Images Tab](images/git_imgs/Tensorboard_images_tab.png) 
 
 The jupyter notebook `DLA_predict_stickiness_k.ipynb` includes precessing of the datasets (*.csv files) logged in the simulation part.
-The processed dataset is then used to fit a polynomial used for predicting the stickiness.
+The processed dataset is then used to fit a polynomial curve for predicting the stickiness.
 The file includes some of the samples images so that the model can be quickly trained and validated for it's correctness.
 
 ## Brownian Tree Formation
