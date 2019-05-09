@@ -78,8 +78,8 @@ The file includes some of the samples images so that the model can be quickly tr
 - run `sh generate_trees_k.sh` on terminal to start the DLA simulation and dataset creation.
 - The data will be logged in `runs/part05_brownian_tree_generation` which can be easily visualized in tensorboard.
 
-Screenshot of the part05_brownian_tree_generation from Tensorboard (page 1) : ![Tendorboard_part05_1](images/git_imgs/Tensorboard_part05_1.png)
-Screenshot of the part05_brownian_tree_generation from Tensorboard (page 2) : ![Tendorboard_part05_2](images/git_imgs/Tendorboard_part05_2.png)
+Screenshot of the part05_brownian_tree_generation from Tensorboard (page 1) : ![Tensorboard_part05_1](images/git_imgs/Tensorboard_part05_1.png)
+Screenshot of the part05_brownian_tree_generation from Tensorboard (page 2) : ![Tensorboard_part05_2](images/git_imgs/Tensorboard_part05_2.png)
 
 Note : All the illustrations below are directly taken from the tensorboard visualizations.
 
