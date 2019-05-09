@@ -75,6 +75,13 @@ The file includes some of the samples images so that the model can be quickly tr
 - Boundary Condition on the particles : The behavior of the particle on reaching the end of the lattice. e.g. if the particles reaches the end of lattice, terminate and continue with a new random particle or bounce back into the lattice with an inverted velocity or reintroduce the same particle in a toroidally bound manner etc.
 
 ## Illustrations of Brownian trees formation
+- run `sh generate_trees_k.sh` on terminal to start the DLA simulation and dataset creation.
+- The data will be logged in `runs/part05_brownian_tree_generation` which can be easily visualized in tensorboard.
+
+Screenshot of the part05_brownian_tree_generation from Tensorboard (page 1) : ![Tendorboard_part05_1](images/git_imgs/Tensorboard_part05_1.png)
+Screenshot of the part05_brownian_tree_generation from Tensorboard (page 2) : ![Tendorboard_part05_2](images/git_imgs/Tendorboard_part05_2.png)
+
+Note : All the illustrations below are directly taken from the tensorboard visualizations.
 
 ### Illustrations of fully grown Brownian trees using locus mapping method for faster tree growth.
 - Max lattice size = 1001, k = 1.0, Pad size = 1, N=8131
@@ -138,72 +145,49 @@ The effect of stickiness (k) can be clearly observed above. Smaller stickiness r
 ![Max lattice size = 205, k = 0.0015625, Pad size = 1](images/videos_brownian_motion/part04_brownian_tree_generation_ls205/k0.0015625_checkpoint.png)
 
 ### Illustrations of effect of padding size used in locus mapping on random walk.
-- Max lattice size = 21, k = 1.0, Pad size = 10.
+Note : `runs/part01_brownian_motion_of_particles` folder has all the data plots and tensorboard logs as the gifs below might not be clearly visible.
+The same can be viewed in tensorboard very clearly.
 
-![Max lattice size = 21, k = 1.0, Pad size = 10.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_38_59_leelavathi_k1.0_ls21_pad10.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 9.
+Screenshot of the part01_brownian_motion_of_particles from Tensorboard : ![Tendorboard_part01](images/git_imgs/Tendorboard_part01.png)
 
-![Max lattice size = 21, k = 1.0, Pad size = 9.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_04_leelavathi_k1.0_ls21_pad9.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 8.
+- Max lattice size = 21, k = 1.0, Pad size = 10. : ![Max lattice size = 21, k = 1.0, Pad size = 10.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_38_59_leelavathi_k1.0_ls21_pad10.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 9. :![Max lattice size = 21, k = 1.0, Pad size = 9.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_04_leelavathi_k1.0_ls21_pad9.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 8. : ![Max lattice size = 21, k = 1.0, Pad size = 8.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_08_leelavathi_k1.0_ls21_pad8.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 7. : ![Max lattice size = 21, k = 1.0, Pad size = 7.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_11_leelavathi_k1.0_ls21_pad7.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 6. : ![Max lattice size = 21, k = 1.0, Pad size = 6.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_15_leelavathi_k1.0_ls21_pad6.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 5. : ![Max lattice size = 21, k = 1.0, Pad size = 5.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_21_leelavathi_k1.0_ls21_pad5.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 4. : ![Max lattice size = 21, k = 1.0, Pad size = 4.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_23_leelavathi_k1.0_ls21_pad4.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 3. : ![Max lattice size = 21, k = 1.0, Pad size = 3.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_28_leelavathi_k1.0_ls21_pad3.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 2. : ![Max lattice size = 21, k = 1.0, Pad size = 2.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_31_leelavathi_k1.0_ls21_pad2.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 1. : ![Max lattice size = 21, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_37_leelavathi_k1.0_ls21_pad1.gif)
 
-![Max lattice size = 21, k = 1.0, Pad size = 8.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_08_leelavathi_k1.0_ls21_pad8.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 7.
-
-![Max lattice size = 21, k = 1.0, Pad size = 7.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_11_leelavathi_k1.0_ls21_pad7.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 6.
-
-![Max lattice size = 21, k = 1.0, Pad size = 6.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_15_leelavathi_k1.0_ls21_pad6.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 5.
-
-![Max lattice size = 21, k = 1.0, Pad size = 5.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_21_leelavathi_k1.0_ls21_pad5.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 4.
-
-![Max lattice size = 21, k = 1.0, Pad size = 4.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_23_leelavathi_k1.0_ls21_pad4.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 3.
-
-![Max lattice size = 21, k = 1.0, Pad size = 3.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_28_leelavathi_k1.0_ls21_pad3.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 2.
-
-![Max lattice size = 21, k = 1.0, Pad size = 2.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_31_leelavathi_k1.0_ls21_pad2.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 1.
-
-![Max lattice size = 21, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_37_leelavathi_k1.0_ls21_pad1.gif)
-
-As the padding size increase the effective lattice area for random walk increases and hence the particle takes longer to aggregate even with a stickiness k=1.0
+Note : As the padding size increase the effective lattice area for random walk increases and hence the particle takes longer to aggregate even with a stickiness k=1.0
 
 ### Illustrations of effect of stickiness (k) in the generation of Brownian tree.
-- Max lattice size = 11, k = 1.0
+Note : `runs/part02_stickiness_of_particles` folder has all the data plots and tensorboard logs as the gifs below might not be clearly visible.
+The same can be viewed in tensorboard very clearly.
 
-![Max lattice size = 11, k = 1.0](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.5
+Screenshot of the part02_stickiness_of_particles from Tensorboard : ![Tendorboard_part02](images/git_imgs/Tendorboard_part02.png)
 
-![Max lattice size = 11, k = 0.5](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_05_leelavathi_k0.5_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.1
+- Max lattice size = 11, k = 1.0 : ![Max lattice size = 11, k = 1.0](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1.gif)
+- Max lattice size = 11, k = 0.5 : ![Max lattice size = 11, k = 0.5](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_05_leelavathi_k0.5_ls11_pad1.gif)
+- Max lattice size = 11, k = 0.1 : ![Max lattice size = 11, k = 0.1](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_10_leelavathi_k0.1_ls11_pad1.gif)
+- Max lattice size = 11, k = 0.05 : ![Max lattice size = 11, k = 0.05](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_15_leelavathi_k0.05_ls11_pad1.gif)
+- Max lattice size = 11, k = 0.025 : ![Max lattice size = 11, k = 0.025](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_21_leelavathi_k0.025_ls11_pad1.gif)
+- Max lattice size = 11, k = 0.0125 : ![Max lattice size = 11, k = 0.0125](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_25_leelavathi_k0.0125_ls11_pad1.gif)
+- Max lattice size = 11, k = 0.00625 : ![Max lattice size = 11, k = 0.00625](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_31_leelavathi_k0.00625_ls11_pad1.gif)
+- Max lattice size = 11, k = 0.003125 : ![Max lattice size = 11, k = 0.003125](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_36_leelavathi_k0.003125_ls11_pad1.gif)
+- Max lattice size = 11, k = 0.0015625 : ![Max lattice size = 11, k = 0.0015625](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_42_leelavathi_k0.0015625_ls11_pad1.gif)
 
-![Max lattice size = 11, k = 0.1](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_10_leelavathi_k0.1_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.05
-
-![Max lattice size = 11, k = 0.05](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_15_leelavathi_k0.05_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.025
-
-![Max lattice size = 11, k = 0.025](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_21_leelavathi_k0.025_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.0125
-
-![Max lattice size = 11, k = 0.0125](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_25_leelavathi_k0.0125_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.00625
-
-![Max lattice size = 11, k = 0.00625](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_31_leelavathi_k0.00625_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.003125
-
-![Max lattice size = 11, k = 0.003125](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_36_leelavathi_k0.003125_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.0015625
-
-![Max lattice size = 11, k = 0.0015625](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_42_leelavathi_k0.0015625_ls11_pad1.gif)
-
-As the stickiness k decreases, the particles are able to diffuse further into the lattice and hence forming a more dense clusters of tree.
+Note : As the stickiness k decreases, the particles are able to diffuse further into the lattice and hence forming a more dense clusters of tree.
 Also the decrease in the diffusion locus location for introducing the particles can be observed due to toroidal structure until there is no diffusion locus left prompting termination.
 
 ### Illustrations of effect of Max lattice size in the generation of Brownian tree.
+Note : `runs/part03_brownian_tree_generation` folder has all the data plots and tensorboard logs as the gifs below might not be clearly visible.
+The same can be viewed in tensorboard very clearly.
+
+Screenshot of the part03_brownian_tree_generation from Tensorboard : ![Tendorboard_part03](images/git_imgs/Tendorboard_part03.png)
+
 - Max lattice size = 3, k = 1.0, Pad size = 1.
 
 ![Max lattice size = 3, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_54_leelavathi_k1.0_ls3_pad1)
@@ -235,6 +219,7 @@ Refer to **DLA_Sourabh_Balgi_report.pdf** for further explaination.
 ## Estimation of stickiness (k) from the simulation data
 
 ### Dataset creation
+- run `sh generate_trees_k.sh` on terminal to start the DLA simulation and dataset creation.
 - Create dataset from the DLA simulation during Brownian tree generation.
 - Perform train, dev, test splits on the full dataset for using dev set to select best model complexity without over fitting on train set. Test set is used for evaluation on unseen data.
 - Complete dataset is split into train (66%) and test (33%).
@@ -269,6 +254,7 @@ Refer to **DLA_Sourabh_Balgi_report.pdf** for further explaination.
 ![Correlation plots of the features](images/git_imgs/feature_correlation_plot.png)
 
 ### Model selection
+- `DLA_predict_stickiness_k.ipynb` consists of the part of predicting the stickiness (k) by fitting the data from the simulation.
 - Observing the features from before, The relation of stickiness (k) with number of particles (N) is clearly nonlinear. 
 - The plot of contour perimeter against number of particles (N) with different values of k indicates that the slope of the curve is related to stickiness (k).
 - However since the slope for different k are not equally spaced, this indicates that the slope is a nonlinear function of stickiness (k).
@@ -286,5 +272,5 @@ The MAE and MSE for the best models are reported as below.
 
 ### Future Work
 
-- **Are we there yet in perdicting the stickiness more accurately?!**
-- We can do even better by carefully analysing all the other features and bitting better models such as linear regression with L1/L2 regularizers or SVR (Support Vector Regressor) with RBF kernel.
+- Question : **Are we there yet in predicting the stickiness (k) accurately?!** Answer : Definetely not !!! 
+- We can do even better by carefully analysing all the other features and fitting better models such as linear regression with L1/L2 regularizers or SVR (Support Vector Regressor) with RBF kernel.

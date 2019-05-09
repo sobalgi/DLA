@@ -285,6 +285,8 @@ for k in k_s:
 central_pandas_dataframe.to_csv('central_pandas_dataframe.csv')
 
 # # Part 6 - Estimate fractal Dimension for image and also stickiness
+# Check DLA_predict_stickiness_k.ipynb jupyter notebook for fitting the model to predict stickiness.
+# TODO : Implement the same part inside DLA Brownian tree itself.
 # dla = Brownian_Tree(lattice_size=1001, k=0.5, pad_size=2)
 # dla.extract_base_image('runs/19_05_04_20_23_27_leelavathi_k1.0_ls101_N10201/Brownian_Tree_Images/Brownian_Tree_k1.0_ls101_N475.png')
 # dla.find_fractal_dimension()

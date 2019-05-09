@@ -1,7 +1,7 @@
 # \runs
 # \runs\part01*
-\runs\part02*
-\runs\part03*
+# \runs\part02*
+# \runs\part03*
 \runs\part04*
 \runs\part05*
 \tree_checkpoints
