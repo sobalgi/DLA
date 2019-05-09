@@ -148,10 +148,10 @@ The effect of stickiness (k) can be clearly observed above. Smaller stickiness r
 Note : `runs/part01_brownian_motion_of_particles` folder has all the data plots and tensorboard logs as the gifs below might not be clearly visible.
 The same can be viewed in tensorboard very clearly.
 
-Screenshot of the part01_brownian_motion_of_particles from Tensorboard : ![Tendorboard_part01](images/git_imgs/Tendorboard_part01.png)
+Screenshot of the part01_brownian_motion_of_particles from Tensorboard : ![Tensorboard_part01](images/git_imgs/Tensorboard_part01.png)
 
 - Max lattice size = 21, k = 1.0, Pad size = 10. : ![Max lattice size = 21, k = 1.0, Pad size = 10.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_38_59_leelavathi_k1.0_ls21_pad10.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 9. :![Max lattice size = 21, k = 1.0, Pad size = 9.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_04_leelavathi_k1.0_ls21_pad9.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 9. : ![Max lattice size = 21, k = 1.0, Pad size = 9.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_04_leelavathi_k1.0_ls21_pad9.gif)
 - Max lattice size = 21, k = 1.0, Pad size = 8. : ![Max lattice size = 21, k = 1.0, Pad size = 8.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_08_leelavathi_k1.0_ls21_pad8.gif)
 - Max lattice size = 21, k = 1.0, Pad size = 7. : ![Max lattice size = 21, k = 1.0, Pad size = 7.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_11_leelavathi_k1.0_ls21_pad7.gif)
 - Max lattice size = 21, k = 1.0, Pad size = 6. : ![Max lattice size = 21, k = 1.0, Pad size = 6.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_15_leelavathi_k1.0_ls21_pad6.gif)
@@ -167,7 +167,7 @@ Note : As the padding size increase the effective lattice area for random walk i
 Note : `runs/part02_stickiness_of_particles` folder has all the data plots and tensorboard logs as the gifs below might not be clearly visible.
 The same can be viewed in tensorboard very clearly.
 
-Screenshot of the part02_stickiness_of_particles from Tensorboard : ![Tendorboard_part02](images/git_imgs/Tendorboard_part02.png)
+Screenshot of the part02_stickiness_of_particles from Tensorboard : ![Tensorboard_part02](images/git_imgs/Tensorboard_part02.png)
 
 - Max lattice size = 11, k = 1.0 : ![Max lattice size = 11, k = 1.0](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1.gif)
 - Max lattice size = 11, k = 0.5 : ![Max lattice size = 11, k = 0.5](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_05_leelavathi_k0.5_ls11_pad1.gif)
@@ -182,11 +182,14 @@ Screenshot of the part02_stickiness_of_particles from Tensorboard : ![Tendorboar
 Note : As the stickiness k decreases, the particles are able to diffuse further into the lattice and hence forming a more dense clusters of tree.
 Also the decrease in the diffusion locus location for introducing the particles can be observed due to toroidal structure until there is no diffusion locus left prompting termination.
 
+- Number of diffusion locus points : Due to locus mapping, the number of diffusion locus points initially start low and progressively increase as the tree grows. After reaching the maximum diffusion locus, it starts to decrease due to particles getting stuck on the diffusion locus as the tree grows thereby resulting in termination of the tree. 
+![Number of diffusion locus points](images/git_imgs/02_simulation_data_num_diff_locus_points.png)
+
 ### Illustrations of effect of Max lattice size in the generation of Brownian tree.
 Note : `runs/part03_brownian_tree_generation` folder has all the data plots and tensorboard logs as the gifs below might not be clearly visible.
 The same can be viewed in tensorboard very clearly.
 
-Screenshot of the part03_brownian_tree_generation from Tensorboard : ![Tendorboard_part03](images/git_imgs/Tendorboard_part03.png)
+Screenshot of the part03_brownian_tree_generation from Tensorboard : ![Tensorboard_part03](images/git_imgs/Tensorboard_part03.png)
 
 - Max lattice size = 3, k = 1.0, Pad size = 1.
 
