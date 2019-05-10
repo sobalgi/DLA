@@ -286,7 +286,7 @@ Due to the scale invariance property of Brownian trees, The structure in which t
 
 ### Trick for faster Brownian tree generation.
 Locus mapping for reducing the effective area of random walk.
-Refer to **DLA_Sourabh_Balgi_report.pdf** for further explaination.
+Refer to **DLA_Sourabh_Balgi_report.pdf**[DLA_Sourabh_Balgi_report.pdf](DLA_Sourabh_Balgi_report.pdf) for further explaination.
 
 ## Estimation of stickiness (k) from the simulation data
 
