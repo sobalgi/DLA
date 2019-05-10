@@ -28,7 +28,7 @@ You will need:
 
 On Linux:
 
-- for CPU enabled PyTorch : ```> conda install pytorch-cpu torchvision-cpu -c pytorch```
+- for CPU enabled PyTorch : ```> conda install pytorch-cpu torchvision-cpu -c pytorch``` or 
 - for GPU enabled PyTorch : ```> conda install pytorch torchvision cudatoolkit=9.0 -c pytorch```
 
 ### OpenCV with Python bindings
@@ -47,18 +47,18 @@ Use pip install other dependencies using command below:
 
 The main class of DLA object is present in `dla.py` as `Brownian_Tree`.
 
-The file `DLA_run_main.py` is the main file used to run simulations.
+The file `DLA_run_main.py` [DLA_run_main.py](DLA_run_main.py) is the main file used to run simulations.
 
-The file `generate_trees_k.sh` consists of experiments to generate trees on a lattice of size 1001 with a padding size of 1 for locus mapping and different stickiness k=\[1.0, 0.5, 0.1, 0.05, 0.025, 0.0125, 0.00625, 0.003125, 0.0015625\]
+The file `generate_trees_k.sh` [generate_trees_k.sh](generate_trees_k.sh) consists of experiments to generate trees on a lattice of size 1001 with a padding size of 1 for locus mapping and different stickiness k=\[1.0, 0.5, 0.1, 0.05, 0.025, 0.0125, 0.00625, 0.003125, 0.0015625\]
 
 The tensorboard log files and checkpoints are generated in the folder `runs`.
 They can be visualized in tensorboard using `tensorboard --logdir runs/` command in the terminal.
-Once the tensorboard is running, using `localhost:6006` all the plots, figures and datalogs can be viewed in tensorboard. 
+Once the tensorboard is running, using `localhost:6006` address in the browser, all the plots, figures and datalogs can be viewed in tensorboard. 
 
 - Tensorboard Scalars Tab : ![Tensorboard Scalars Tab](images/git_imgs/Tensorboard_Scalars_tab.png) 
 - Tensorboard Images Tab : ![Tensorboard Images Tab](images/git_imgs/Tensorboard_images_tab.png) 
 
-The jupyter notebook `DLA_predict_stickiness_k.ipynb` includes precessing of the datasets (*.csv files) logged in the simulation part.
+The jupyter notebook `DLA_predict_stickiness_k.ipynb` [DLA_predict_stickiness_k.ipynb](DLA_predict_stickiness_k.ipynb) includes precessing of the datasets (*.csv files) logged in the simulation part.
 The processed dataset is then used to fit a polynomial curve for predicting the stickiness.
 The file includes some of the samples images so that the model can be quickly trained and validated for it's correctness.
 
@@ -286,7 +286,7 @@ Due to the scale invariance property of Brownian trees, The structure in which t
 
 ### Trick for faster Brownian tree generation.
 Locus mapping for reducing the effective area of random walk.
-Refer to **DLA_Sourabh_Balgi_report.pdf**[DLA_Sourabh_Balgi_report.pdf](DLA_Sourabh_Balgi_report.pdf) for further explaination.
+Refer to [DLA_Sourabh_Balgi_report.pdf](DLA_Sourabh_Balgi_report.pdf) for further explaination.
 
 ## Estimation of stickiness (k) from the simulation data
 
