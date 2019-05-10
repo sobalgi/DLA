@@ -33,7 +33,7 @@ import pandas as pd
 
 # Brownian tree object for creation of brownian tree
 class Brownian_Tree():
-    def __init__(self, lattice_size=501, k=0.5, pad_size=5, base_img_path=None, log_dir_parent='', include_video=False):
+    def __init__(self, lattice_size=501, k=0.5, pad_size=5, base_img_path=None, log_dir_parent='', include_video=False, log_interval=1):
         self.Brownian_Tree_possible = True  # Set the flag to indicate the possibility of Brownian_Tree
         self.lattice_boundary_reached = False  # Set the flag to indicate the diffusion locus along the border of Max lattice
         self.max_lattice_size = lattice_size  # create a square lattice for Brownian_Tree
@@ -52,40 +52,39 @@ class Brownian_Tree():
         # curr_neighbours = (self.relative_neighbours + cur_pos) % self.state.shape[0]  # to get current neighbours of cur_pos in the state lattice
 
         # default values for error handling just for the time being. Needs investigation.
-        self.a_bbc = -1
-        self.a_bbe = -1
-        self.cv_centroid_x = -1
-        self.cv_centroid_y = -1
-        self.cv_leftmost_x = -1
-        self.cv_leftmost_y = -1
-        self.cv_rightmost_x = -1
-        self.cv_rightmost_y = -1
-        self.cv_topmost_x = -1
-        self.cv_topmost_y = -1
-        self.cv_bottommost_x = -1
-        self.cv_bottommost_y = -1
-        self.cv_contour_area = -1
-        self.cv_contour_perimeter = -1
-        self.cv_contour_k = -1
-        self.cv_boundingRect_x = -1
-        self.cv_boundingRect_y = -1
-        self.cv_boundingRect_w = -1
-        self.cv_boundingRect_h = -1
-        self.cv_boundingRect_area = -1
-        self.cv_hull_area = -1
-        self.cv_extent = -1
-        self.cv_solidity = -1
-        self.cv_minEnclosingCircle_center_x = -1
-        self.cv_minEnclosingCircle_center_y = -1
-        self.cv_minEnclosingCircle_r = -1
-        self.cv_equi_radius = -1
-        self.coeffs[0] = -1
-        self.coeffs[1] = -1
+        self.a_bbc = 0  # -1
+        self.a_bbe = 0  # -1
+        self.cv_centroid_x = 0  # -1
+        self.cv_centroid_y = 0  # -1
+        self.cv_leftmost_x = 0  # -1
+        self.cv_leftmost_y = 0  # -1
+        self.cv_rightmost_x = 0  # -1
+        self.cv_rightmost_y = 0  # -1
+        self.cv_topmost_x = 0  # -1
+        self.cv_topmost_y = 0  # -1
+        self.cv_bottommost_x = 0  # -1
+        self.cv_bottommost_y = 0  # -1
+        self.cv_contour_area = 0  # -1
+        self.cv_contour_perimeter = 0  # -1
+        self.cv_contour_k =  False  # -1
+        self.cv_boundingRect_x = 0  # -1
+        self.cv_boundingRect_y = 0  # -1
+        self.cv_boundingRect_w = 0  # -1
+        self.cv_boundingRect_h = 0  # -1
+        self.cv_boundingRect_area = 0  # -1
+        self.cv_hull_area = 0  # -1
+        self.cv_extent = 1  # -1
+        self.cv_solidity = 1  # -1
+        self.cv_minEnclosingCircle_center_x = 0  # -1
+        self.cv_minEnclosingCircle_center_y = 0  # -1
+        self.cv_minEnclosingCircle_r = 0  # -1
+        self.cv_equi_radius = 0  # -1
+        self.coeffs[0] = lattice_size ** 2  # -1
+        self.coeffs[1] = 0  # -1
 
         # if base_img_path is not None:
         #     self.extract_base_image(base_img_path=base_img_path)  # extract base image from the given image of any lattice size
-        self.extract_base_image(
-            base_img_path=base_img_path)  # extract base image from the given image of any lattice size
+        self.extract_base_image(base_img_path=base_img_path)  # extract base image from the given image of any lattice size
 
         # self.state = F.pad(self.base_state, pad=(self.pad_size, self.pad_size, self.pad_size, self.pad_size), mode='constant', value=0)
         # self.state_size = self.state.shape[0]
@@ -343,10 +342,11 @@ class Brownian_Tree():
             # vutils.save_image(self.vid_list[-1].unsqueeze(dim=0), '{}/Brownian_Tree_Images/Brownian_Tree_k{}_ls{}_N{}_reached.png'.format(self.writer.log_dir, self.k, self.max_lattice_size, self.num_particles), normalize=True)
             # vutils.save_image(vutils.make_grid(self.vid_list[-1].unsqueeze(dim=0)), f'{self.writer.log_dir}/Brownian_Tree_Images/Brownian_Tree_k{self.k}_ls{self.max_lattice_size}_N{self.num_particles}_reached.png', normalize=True)
             # vutils.save_image(self.vid_list[-1].unsqueeze(dim=0), f'{self.writer.log_dir}/Brownian_Tree_Images/Brownian_Tree_k{self.k}_ls{self.max_lattice_size}_N{self.num_particles}_reached.png', normalize=True)
-            os.system(f'mkdir -p tree_checkpoints/ls{self.base_state_size}')
+            # os.system(f'mkdir -p tree_checkpoints/ls{self.base_state_size}')
+            os.system(f'mkdir -p tree_checkpoints/k{self.k}')
             # os.system(f'mkdir -p tree_checkpoints/ls{self.max_lattice_size*2 + 1}')
             os.system(
-                f'cp {self.writer.log_dir}/Brownian_Tree_Images/Brownian_Tree_k{self.k}_ls{self.base_state_size}_N{self.num_particles}_reached.png tree_checkpoints/ls{self.base_state_size}/k{self.k}_checkpoint.png')
+                f'cp {self.writer.log_dir}/Brownian_Tree_Images/Brownian_Tree_k{self.k}_ls{self.base_state_size}_N{self.num_particles}_reached.png tree_checkpoints/k{self.k}/k{self.k}_ls{self.base_state_size}_checkpoint.png')
             # os.system(f'cp {self.writer.log_dir}/Brownian_Tree_Images/Brownian_Tree_k{self.k}_ls{self.max_lattice_size}_N{self.num_particles}_reached.png tree_checkpoints/ls{self.max_lattice_size*2 + 1}/k{self.k}_checkpoint.png')
         else:
             if self.include_video:
@@ -1404,7 +1404,8 @@ class Brownian_Tree():
                         Max_lattice_size -= 2
                         # print(Max_lattice_size)
                         # print(base_img_path)
-                        base_img_path = 'tree_checkpoints/ls{}/k{}_checkpoint.png'.format(Max_lattice_size, self.k)
+                        # base_img_path = 'tree_checkpoints/ls{}/k{}_checkpoint.png'.format(Max_lattice_size, self.k)
+                        base_img_path = 'tree_checkpoints/k{}/k{}_ls{}_checkpoint.png'.format(self.k, self.k, Max_lattice_size)
                         # print(base_img_path)
                     else:
                         break

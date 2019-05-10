@@ -8,6 +8,7 @@ from dla import Brownian_Tree
 import numpy as np
 
 # # Part 1 - plot the brownian motion walk for a small lattice
+# # convert -resize 100x100 -delay 10 -loop 0 `ls -v Brownian_motion_k1.0_ls21_N2_walk*` Brownian_motion_k1.0_ls21_N2.gif
 # lattice_size = 21  # square lattice size, >= 500
 # k = 1.0  # stickiness (0.0 <= k <= 1), for us (1e-3, 5e-2)
 # N = 1  # Number of particles for diffusion >=50000
@@ -19,6 +20,7 @@ import numpy as np
 # dla.writer.close()
 
 # # Part 2 - plot the Brownian_Tree simulation for the below configuration, Brownian motion turned off for speedup
+# # convert -resize 100x100 -delay 10 -loop 0 `ls -v Brownian_Tree*` Brownian_Tree.gif
 # lattice_size = 101  # square lattice size, >= 500
 # k = 1.0  # stickiness (0.0 <= k <= 1), for us (1e-3, 5e-2)
 # # k = 0.5  # stickiness (0.0 <= k <= 1), for us (1e-3, 5e-2)
@@ -55,6 +57,7 @@ import numpy as np
 # dla.writer.close()
 
 # # Part 3 - plot the Brownian_Tree simulation for the below configuration, incremental lattice growth and plotting video as well
+# # convert -resize 100x100 -delay 10 -loop 0 `ls -v Brownian_Tree*` Brownian_Tree.gif
 # import argparse
 # import pandas as pd
 #
@@ -64,6 +67,7 @@ import numpy as np
 # parser = argparse.ArgumentParser()
 # parser.add_argument('-ls', '--lattice_sizes', nargs='+', help='list of length of square lattice', default=[101, 201, 301, 401, 501, 701, 901, 1001], type=int)
 # parser.add_argument('-ks', '--k_s', nargs='+', help='list of stickiness for Brownian_Tree', default=[1.0, 0.5, 0.1, 0.05, 0.025, 0.0125, 0.00625, 0.003125, 0.0015625], type=float)
+# parser.add_argument('-base_img_path', help='Starting image path', default='tree_checkpoints/ls549/k1.0_checkpoint.png')
 # args = parser.parse_args()
 #
 # lattice_sizes = args.lattice_sizes  # square lattice size, >= 500
@@ -77,12 +81,13 @@ import numpy as np
 #
 # Max_lattice_size = 1001
 # N = Max_lattice_size ** 2
-# lattice_steps = np.arange(3, np.ceil(np.sqrt(1001))+1) ** 2
-# lattice_steps[lattice_steps % 2 == 0] += 1
+# # lattice_steps = np.arange(3, np.ceil(np.sqrt(1001))+1) ** 2
+# # lattice_steps[lattice_steps % 2 == 0] += 1
 # pad_size_dict = {1.0: 1, 0.5: 1, 0.1: 1, 0.05: 1, 0.025: 1, 0.0125: 1, 0.00625: 1, 0.003125: 1, 0.0015625: 1}
 #
+# num_particles = 0
 # exp_num = 0
-# init_lattice_size = 0
+# init_lattice_size = 1
 # for k in k_s:
 #     # for lattice_size in lattice_sizes:
 #     # N = 5000
@@ -92,9 +97,11 @@ import numpy as np
 #     # pad_size = 1
 #     pad_size = pad_size_dict[k]  # get padding size
 #     # for i, lattice_size in enumerate(lattice_steps):
-#     lattice_size = 2 * init_lattice_size + 1
-#     while lattice_size < 2 * Max_lattice_size:
-#         dla = Brownian_Tree(lattice_size=lattice_size, k=k, pad_size=pad_size, base_img_path=f'tree_checkpoints/ls{init_lattice_size}/k{k}_checkpoint.png', log_dir_parent=f'part03_brownian_tree_generation/k{k}/')
+#     # lattice_size = 2 * init_lattice_size + 1
+#     lattice_size = init_lattice_size + 4
+#     while lattice_size < Max_lattice_size:
+#         dla = Brownian_Tree(lattice_size=lattice_size, k=k, pad_size=pad_size, base_img_path=f'tree_checkpoints/k{k}/k{k}_ls{init_lattice_size}_checkpoint.png', log_dir_parent=f'part03_brownian_tree_generation/k{k}/', include_video=True,
+#                             log_interval=1)
 #         # dla = Brownian_Tree(lattice_size=lattice_size, k=k, pad_size=pad_size, base_img_path='runs/19_05_04_11_18_19_leelavathi_k1.0_ls101_N10201/Brownian_Tree_Images/Brownian_Tree_k1.0_ls101_N1500.png')
 #
 #         # num_log_datapoints = N
@@ -111,6 +118,10 @@ import numpy as np
 #         # for i in range(N):
 #         while dla.Brownian_Tree_possible and not dla.lattice_boundary_reached:
 #             dla.insert_new_particles(N=1, show_walk=False)
+#             num_particles += 1
+#
+#             # if num_particles % 100:
+#             #     break
 #             # if dla.Brownian_Tree_possible:
 #             #     if dla.num_particles % plot_interval == 0:
 #             #         dla.insert_new_particles(N=1, show_walk=False)
@@ -122,11 +133,12 @@ import numpy as np
 #             #     break
 #
 #             if dla.num_particles % plot_interval == 0:
+#                 dla.update_and_log_particle_data()
 #                 dla.print_brownian_tree(fps=int(np.sqrt(dla.num_particles)), add_video=False)
 #             if dla.num_particles % log_interval == 0:
 #                 dla.update_and_log_particle_data()
-#         dla.print_brownian_tree(fps=int(np.sqrt(dla.num_particles)), add_video=True)
 #         dla.update_and_log_particle_data()
+#         dla.print_brownian_tree(fps=int(np.sqrt(dla.num_particles)), add_video=True)
 #         # dla.writer.export_scalars_to_json(f'{dla.writer.log_dir}/all_scalars.json')
 #         dla.writer.close()
 #
@@ -140,33 +152,19 @@ import numpy as np
 #             central_pandas_dataframe = pd.concat([central_pandas_dataframe, dla.log_dataframe])
 #
 #         # store all the logs as a single csv file for model fitting. Note : Individual run specific dataframes are stored in the tensorboard logs directory.
+#         # central_pandas_dataframe.to_csv(f'central_pandas_dataframe_k{k}_ls{lattice_size}.csv')
 #         central_pandas_dataframe.to_csv(f'central_pandas_dataframe_k{k}.csv')
 #
 #         # update lattice size to twice and continue
 #         init_lattice_size = lattice_size
-#         lattice_size = 2 * init_lattice_size + 1
+#         # lattice_size = 2 * init_lattice_size + 1
+#         lattice_size = init_lattice_size + 4
 #
 #     # store all the logs as a single csv file for model fitting. Note : Individual run specific dataframes are stored in the tensorboard logs directory.
 #     central_pandas_dataframe.to_csv('central_pandas_dataframe.csv')
-#
-#     # for N in Max_N:
-#     #     dla = Brownian_Tree(lattice_size=lattice_size, k=k)
-#     #     for i in range(N):
-#     #         if dla.Brownian_Tree_possible:
-#     #             dla.insert_particles(N=1)
-#     #         else:
-#     #             dla.printState()
-#     #             dla.logSimData()
-#     #             break
-#     #
-#     #         if i % print_interval == 0:
-#     #             dla.printState()
-#     #         if i % log_interval == 0:
-#     #             dla.logSimData()
-#     #     dla.writer.export_scalars_to_json(f'{dla.writer.log_dir}/all_scalars.json')
-#     #     dla.writer.close()
 
 # # Part 4 - Run all configurations in one go, for all data logging.
+# # convert -resize 200x200 -delay 10 -loop 0 `ls -v Brownian_Tree*` Brownian_Tree.gif
 # import argparse
 # import pandas as pd
 
@@ -227,6 +225,7 @@ import numpy as np
 # central_pandas_dataframe.to_csv('central_pandas_dataframe.csv')
 
 # Part 5 - Run all configurations in one go, for all data logging.
+# # convert -resize 200x200 -delay 10 -loop 0 `ls -v Brownian_Tree*` Brownian_Tree.gif
 import argparse
 import pandas as pd
 
@@ -252,7 +251,7 @@ Max_lattice_size = max(lattice_sizes)
 # N = Max_lattice_size ** 2
 # lattice_steps = np.arange(3, np.ceil(np.sqrt(1001))+1) ** 2
 # lattice_steps[lattice_steps % 2 == 0] += 1
-pad_size_dict = {1.0: 500, 0.5: 1, 0.1: 1, 0.05: 1, 0.025: 1, 0.0125: 1, 0.00625: 1, 0.003125: 1, 0.0015625: 1}
+pad_size_dict = {1.0: 1, 0.5: 1, 0.1: 1, 0.05: 1, 0.025: 1, 0.0125: 1, 0.00625: 1, 0.003125: 1, 0.0015625: 1}
 
 exp_num = 0
 for k in k_s:
@@ -262,6 +261,7 @@ for k in k_s:
                         log_dir_parent=f'part05_brownian_tree_generation/k{k}/')
     log_interval = 1
     plot_interval = int(Max_lattice_size)
+    # plot_interval = 10
 
     while dla.Brownian_Tree_possible and not dla.lattice_boundary_reached:
         dla.insert_new_particles(N=1, show_walk=False)

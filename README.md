@@ -86,30 +86,48 @@ Note : All the illustrations below are directly taken from the tensorboard visua
 ### Illustrations of fully grown Brownian trees using locus mapping method for faster tree growth.
 - Max lattice size = 1001, k = 1.0, Pad size = 1, N=8131
 
+![Max lattice size = 1001, k = 1.0, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k1.0/Brownian_Tree_19_05_07_00_15_53_grothendieck_k10_ls1001_pad1.gif) 
+![Max lattice size = 1001, k = 1.0, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k1.0/Brownian_Tree_19_05_07_20_26_27_grothendieck_k10_ls1001_pad1.gif) 
 ![Max lattice size = 1001, k = 1.0, Pad size = 1, N=8131](images/git_imgs/Brownian_Tree_k10_ls549_N8131_reached.png) 
 - Max lattice size = 1001, k = 0.5, Pad size = 1, N=7416
 
+![Max lattice size = 1001, k = 0.5, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.5/Brownian_Tree_19_05_07_00_16_27_grothendieck_k05_ls1001_pad1.gif)
+![Max lattice size = 1001, k = 0.5, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.5/Brownian_Tree_19_05_07_20_26_27_grothendieck_k05_ls1001_pad1.gif)
 ![Max lattice size = 1001, k = 0.5, Pad size = 1, N=7416](images/git_imgs/Brownian_Tree_k05_ls543_N7416_reached.png)
 - Max lattice size = 1001, k = 0.1, Pad size = 1, N=14046
 
+![Max lattice size = 1001, k = 0.1, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.1/Brownian_Tree_19_05_07_00_16_39_grothendieck_k01_ls1001_pad1.gif)
+![Max lattice size = 1001, k = 0.1, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.1/Brownian_Tree_19_05_07_20_26_27_grothendieck_k01_ls1001_pad1.gif)
 ![Max lattice size = 1001, k = 0.1, Pad size = 1, N=14046](images/git_imgs/Brownian_Tree_k01_ls447_N14046_reached.png)
 - Max lattice size = 1001, k = 0.05, Pad size = 1, N=16016
 
+![Max lattice size = 1001, k = 0.05, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.05/Brownian_Tree_19_05_07_00_16_49_grothendieck_k005_ls1001_pad1.gif)
+![Max lattice size = 1001, k = 0.05, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.05/Brownian_Tree_19_05_07_20_26_27_grothendieck_k005_ls1001_pad1.gif)
 ![Max lattice size = 1001, k = 0.05, Pad size = 1, N=16016](images/git_imgs/Brownian_Tree_k005_ls1001_N16016_good.png)
 - Max lattice size = 1001, k = 0.025, Pad size = 1, N=18122
 
+![Max lattice size = 1001, k = 0.025, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.025/Brownian_Tree_19_05_07_00_17_02_grothendieck_k0025_ls1001_pad1.gif)
+![Max lattice size = 1001, k = 0.025, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.025/Brownian_Tree_19_05_07_20_26_27_grothendieck_k0025_ls1001_pad1.gif)
 ![Max lattice size = 1001, k = 0.025, Pad size = 1, N=18122](images/git_imgs/Brownian_Tree_k0025_ls377_N18122_reached.png)
 - Max lattice size = 1001, k = 0.0125, Pad size = 1, N=24216
 
+![Max lattice size = 1001, k = 0.0125, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.0125/Brownian_Tree_19_05_07_00_17_12_grothendieck_k00125_ls1001_pad1.gif)
+![Max lattice size = 1001, k = 0.0125, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.0125/Brownian_Tree_19_05_07_20_26_27_grothendieck_k00125_ls1001_pad1.gif)
 ![Max lattice size = 1001, k = 0.0125, Pad size = 1, N=24216](images/git_imgs/Brownian_Tree_k00125_ls329_N24216_reached.png)
 - Max lattice size = 1001, k = 0.00625, Pad size = 1, N=22022
 
+![Max lattice size = 1001, k = 0.00625, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.00625/Brownian_Tree_19_05_07_00_17_24_grothendieck_k000625_ls1001_pad1.gif)
+![Max lattice size = 1001, k = 0.00625, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.00625/Brownian_Tree_19_05_07_20_26_27_grothendieck_k000625_ls1001_pad1.gif)
 ![Max lattice size = 1001, k = 0.00625, Pad size = 1, N=22022](images/git_imgs/Brownian_Tree_k000625_ls1001_N22022_good.png)
 - Max lattice size = 1001, k = 0.003125, Pad size = 1, N=14204
 
+![Max lattice size = 1001, k = 0.003125, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.003125/Brownian_Tree_19_05_07_00_17_39_grothendieck_k0003125_ls1001_pad1.gif)
+![Max lattice size = 1001, k = 0.003125, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.003125/Brownian_Tree_19_05_07_20_26_27_grothendieck_k0003125_ls1001_pad1.gif)
 ![Max lattice size = 1001, k = 0.003125, Pad size = 1, N=14204](images/git_imgs/Brownian_Tree_k0003125_ls223_N14204_reached.png)
 - Max lattice size = 1001, k = 0.0015625, Pad size = 1, N=14096
 
+![Max lattice size = 1001, k = 0.0015625, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.0015625/Brownian_Tree_19_05_07_00_17_49_grothendieck_k00015625_ls1001_pad1.gif)
+![Max lattice size = 1001, k = 0.0015625, Pad size = 1](images/videos_brownian_motion/part05_brownian_tree_generation/k0.0015625/Brownian_Tree_19_05_07_20_26_27_grothendieck_k00015625_ls1001_pad1.gif)
 ![Max lattice size = 1001, k = 0.0015625, Pad size = 1, N=14096](images/git_imgs/Brownian_Tree_k00015625_ls193_N14096_reached.png)
 
 Due to the scale invariance property of Brownian trees, The structure in which tree the grow is the same as far as the stickiness is fixed.
@@ -150,16 +168,36 @@ The same can be viewed in tensorboard very clearly.
 
 Screenshot of the part01_brownian_motion_of_particles from Tensorboard : ![Tensorboard_part01](images/git_imgs/Tensorboard_part01.png)
 
-- Max lattice size = 21, k = 1.0, Pad size = 10. : ![Max lattice size = 21, k = 1.0, Pad size = 10.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_38_59_leelavathi_k1.0_ls21_pad10.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 9. : ![Max lattice size = 21, k = 1.0, Pad size = 9.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_04_leelavathi_k1.0_ls21_pad9.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 8. : ![Max lattice size = 21, k = 1.0, Pad size = 8.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_08_leelavathi_k1.0_ls21_pad8.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 7. : ![Max lattice size = 21, k = 1.0, Pad size = 7.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_11_leelavathi_k1.0_ls21_pad7.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 6. : ![Max lattice size = 21, k = 1.0, Pad size = 6.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_15_leelavathi_k1.0_ls21_pad6.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 5. : ![Max lattice size = 21, k = 1.0, Pad size = 5.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_21_leelavathi_k1.0_ls21_pad5.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 4. : ![Max lattice size = 21, k = 1.0, Pad size = 4.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_23_leelavathi_k1.0_ls21_pad4.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 3. : ![Max lattice size = 21, k = 1.0, Pad size = 3.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_28_leelavathi_k1.0_ls21_pad3.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 2. : ![Max lattice size = 21, k = 1.0, Pad size = 2.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_31_leelavathi_k1.0_ls21_pad2.gif)
-- Max lattice size = 21, k = 1.0, Pad size = 1. : ![Max lattice size = 21, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_37_leelavathi_k1.0_ls21_pad1.gif)
+- Max lattice size = 21, k = 1.0, Pad size = 10 : ![Max lattice size = 21, k = 1.0, Pad size = 10](runs/part01_brownian_motion_of_particles/19_05_05_19_38_59_leelavathi_k1.0_ls21_pad10/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 10.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_38_59_leelavathi_k1.0_ls21_pad10.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 9 : ![Max lattice size = 21, k = 1.0, Pad size = 9](runs/part01_brownian_motion_of_particles/19_05_05_19_39_04_leelavathi_k1.0_ls21_pad9/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 9.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_04_leelavathi_k1.0_ls21_pad9.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 8 : ![Max lattice size = 21, k = 1.0, Pad size = 8](runs/part01_brownian_motion_of_particles/19_05_05_19_39_08_leelavathi_k1.0_ls21_pad8/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 8.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_08_leelavathi_k1.0_ls21_pad8.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 7 : ![Max lattice size = 21, k = 1.0, Pad size = 7](runs/part01_brownian_motion_of_particles/19_05_05_19_39_11_leelavathi_k1.0_ls21_pad7/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 7.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_11_leelavathi_k1.0_ls21_pad7.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 6 : ![Max lattice size = 21, k = 1.0, Pad size = 6](runs/part01_brownian_motion_of_particles/19_05_05_19_39_15_leelavathi_k1.0_ls21_pad6/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 6.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_15_leelavathi_k1.0_ls21_pad6.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 5 : ![Max lattice size = 21, k = 1.0, Pad size = 5](runs/part01_brownian_motion_of_particles/19_05_05_19_39_21_leelavathi_k1.0_ls21_pad5/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 5.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_21_leelavathi_k1.0_ls21_pad5.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 4 : ![Max lattice size = 21, k = 1.0, Pad size = 4](runs/part01_brownian_motion_of_particles/19_05_05_19_39_23_leelavathi_k1.0_ls21_pad4/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 4.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_23_leelavathi_k1.0_ls21_pad4.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 3 : ![Max lattice size = 21, k = 1.0, Pad size = 3](runs/part01_brownian_motion_of_particles/19_05_05_19_39_28_leelavathi_k1.0_ls21_pad3/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 3.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_28_leelavathi_k1.0_ls21_pad3.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 2 : ![Max lattice size = 21, k = 1.0, Pad size = 2](runs/part01_brownian_motion_of_particles/19_05_05_19_39_31_leelavathi_k1.0_ls21_pad2/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 2.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_31_leelavathi_k1.0_ls21_pad2.gif)"
+- Max lattice size = 21, k = 1.0, Pad size = 1 : ![Max lattice size = 21, k = 1.0, Pad size = 1](runs/part01_brownian_motion_of_particles/19_05_05_19_39_37_leelavathi_k1.0_ls21_pad1/Brownian_Motion_Images/Brownian_motion_k1.0_ls21_N2.gif)
+
+[//]: # "![Max lattice size = 21, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part01_brownian_motion_of_particles/19_05_05_19_39_37_leelavathi_k1.0_ls21_pad1.gif)"
 
 Note : As the padding size increase the effective lattice area for random walk increases and hence the particle takes longer to aggregate even with a stickiness k=1.0
 
@@ -169,15 +207,42 @@ The same can be viewed in tensorboard very clearly.
 
 Screenshot of the part02_stickiness_of_particles from Tensorboard : ![Tensorboard_part02](images/git_imgs/Tensorboard_part02.png)
 
-- Max lattice size = 11, k = 1.0 : ![Max lattice size = 11, k = 1.0](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.5 : ![Max lattice size = 11, k = 0.5](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_05_leelavathi_k0.5_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.1 : ![Max lattice size = 11, k = 0.1](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_10_leelavathi_k0.1_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.05 : ![Max lattice size = 11, k = 0.05](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_15_leelavathi_k0.05_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.025 : ![Max lattice size = 11, k = 0.025](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_21_leelavathi_k0.025_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.0125 : ![Max lattice size = 11, k = 0.0125](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_25_leelavathi_k0.0125_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.00625 : ![Max lattice size = 11, k = 0.00625](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_31_leelavathi_k0.00625_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.003125 : ![Max lattice size = 11, k = 0.003125](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_36_leelavathi_k0.003125_ls11_pad1.gif)
-- Max lattice size = 11, k = 0.0015625 : ![Max lattice size = 11, k = 0.0015625](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_42_leelavathi_k0.0015625_ls11_pad1.gif)
+- Max lattice size = 11, k = 1.0 (run1) : ![Max lattice size = 11, k = 1.0 (run1)](runs/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 1.0](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1.gif)"
+- Max lattice size = 11, k = 1.0 (run2): ![Max lattice size = 11, k = 1.0 (run2)](runs/part02_stickiness_of_particles/19_05_09_13_00_49_GMADDA_k1.0_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 1.0](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1.gif)"
+- Max lattice size = 21, k = 1.0 : ![Max lattice size = 21, k = 1.0](runs/part02_stickiness_of_particles/19_05_09_13_02_08_GMADDA_k1.0_ls21_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 1.0](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1.gif)"
+- Max lattice size = 51, k = 1.0 : ![Max lattice size = 51, k = 1.0](runs/part02_stickiness_of_particles/19_05_09_13_03_04_GMADDA_k1.0_ls51_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 1.0](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_02_leelavathi_k1.0_ls11_pad1.gif)"
+- Max lattice size = 11, k = 0.5 : ![Max lattice size = 11, k = 0.5](runs/part02_stickiness_of_particles/19_05_05_19_34_05_leelavathi_k0.5_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 0.5](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_05_leelavathi_k0.5_ls11_pad1.gif)"
+- Max lattice size = 11, k = 0.1 : ![Max lattice size = 11, k = 0.1](runs/part02_stickiness_of_particles/19_05_05_19_34_10_leelavathi_k0.1_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 0.1](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_10_leelavathi_k0.1_ls11_pad1.gif)"
+- Max lattice size = 11, k = 0.05 : ![Max lattice size = 11, k = 0.05](runs/part02_stickiness_of_particles/19_05_05_19_34_15_leelavathi_k0.05_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 0.05](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_15_leelavathi_k0.05_ls11_pad1.gif)"
+- Max lattice size = 11, k = 0.025 : ![Max lattice size = 11, k = 0.025](runs/part02_stickiness_of_particles/19_05_05_19_34_21_leelavathi_k0.025_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 0.025](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_21_leelavathi_k0.025_ls11_pad1.gif)"
+- Max lattice size = 11, k = 0.0125 : ![Max lattice size = 11, k = 0.0125](runs/part02_stickiness_of_particles/19_05_05_19_34_25_leelavathi_k0.0125_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 0.0125](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_25_leelavathi_k0.0125_ls11_pad1.gif)"
+- Max lattice size = 11, k = 0.00625 : ![Max lattice size = 11, k = 0.00625](runs/part02_stickiness_of_particles/19_05_05_19_34_31_leelavathi_k0.00625_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 0.00625](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_31_leelavathi_k0.00625_ls11_pad1.gif)"
+- Max lattice size = 11, k = 0.003125 : ![Max lattice size = 11, k = 0.003125](runs/part02_stickiness_of_particles/19_05_05_19_34_36_leelavathi_k0.003125_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 0.003125](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_36_leelavathi_k0.003125_ls11_pad1.gif)"
+- Max lattice size = 11, k = 0.0015625 : ![Max lattice size = 11, k = 0.0015625](runs/part02_stickiness_of_particles/19_05_05_19_34_42_leelavathi_k0.0015625_ls11_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 11, k = 0.0015625](images/videos_brownian_motion/part02_stickiness_of_particles/19_05_05_19_34_42_leelavathi_k0.0015625_ls11_pad1.gif)"
 
 Note : As the stickiness k decreases, the particles are able to diffuse further into the lattice and hence forming a more dense clusters of tree.
 Also the decrease in the diffusion locus location for introducing the particles can be observed due to toroidal structure until there is no diffusion locus left prompting termination.
@@ -191,27 +256,30 @@ The same can be viewed in tensorboard very clearly.
 
 Screenshot of the part03_brownian_tree_generation from Tensorboard : ![Tensorboard_part03](images/git_imgs/Tensorboard_part03.png)
 
-- Max lattice size = 3, k = 1.0, Pad size = 1.
+- Max lattice size = 3, k = 1.0, Pad size = 1 : ![Max lattice size = 3, k = 1.0, Pad size = 1](runs/part03_brownian_tree_generation/k1.0/19_05_05_20_02_54_leelavathi_k1.0_ls3_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
 
-![Max lattice size = 3, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_54_leelavathi_k1.0_ls3_pad1)
-- Max lattice size = 7, k = 1.0, Pad size = 1.
+[//]: # "![Max lattice size = 3, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_54_leelavathi_k1.0_ls3_pad1)"
+- Max lattice size = 7, k = 1.0, Pad size = 1 : ![Max lattice size = 7, k = 1.0, Pad size = 1](runs/part03_brownian_tree_generation/k1.0/19_05_05_20_02_55_leelavathi_k1.0_ls7_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
 
-![Max lattice size = 7, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_55_leelavathi_k1.0_ls7_pad1.gif)
-- Max lattice size = 15, k = 1.0, Pad size = 1.
+[//]: # "![Max lattice size = 7, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_55_leelavathi_k1.0_ls7_pad1.gif)"
+- Max lattice size = 15, k = 1.0, Pad size = 1 : ![Max lattice size = 15, k = 1.0, Pad size = 1](runs/part03_brownian_tree_generation/k1.0/19_05_05_20_02_55_leelavathi_k1.0_ls15_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
 
-![Max lattice size = 15, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_55_leelavathi_k1.0_ls15_pad1.gif)
-- Max lattice size = 31, k = 1.0, Pad size = 1.
+[//]: # "![Max lattice size = 15, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_55_leelavathi_k1.0_ls15_pad1.gif)"
+- Max lattice size = 31, k = 1.0, Pad size = 1 : ![Max lattice size = 31, k = 1.0, Pad size = 1](runs/part03_brownian_tree_generation/k1.0/19_05_05_20_02_56_leelavathi_k1.0_ls31_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
 
-![Max lattice size = 31, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_56_leelavathi_k1.0_ls31_pad1.gif)
-- Max lattice size = 63, k = 1.0, Pad size = 1.
+[//]: # "![Max lattice size = 31, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_56_leelavathi_k1.0_ls31_pad1.gif)"
+- Max lattice size = 63, k = 1.0, Pad size = 1 : ![Max lattice size = 63, k = 1.0, Pad size = 1](runs/part03_brownian_tree_generation/k1.0/19_05_05_20_02_59_leelavathi_k1.0_ls63_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
 
-![Max lattice size = 63, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_59_leelavathi_k1.0_ls63_pad1.gif)
-- Max lattice size = 127, k = 1.0, Pad size = 1.
+[//]: # "![Max lattice size = 63, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_02_59_leelavathi_k1.0_ls63_pad1.gif)"
+- Max lattice size = 127, k = 1.0, Pad size = 1 : ![Max lattice size = 127, k = 1.0, Pad size = 1](runs/part03_brownian_tree_generation/k1.0/19_05_05_20_03_16_leelavathi_k1.0_ls127_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
 
-![Max lattice size = 127, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_03_16_leelavathi_k1.0_ls127_pad1.gif)
-- Max lattice size = 255, k = 1.0, Pad size = 1.
+[//]: # "![Max lattice size = 127, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_03_16_leelavathi_k1.0_ls127_pad1.gif)"
+- Max lattice size = 255, k = 1.0, Pad size = 1 : ![Max lattice size = 255, k = 1.0, Pad size = 1](runs/part03_brownian_tree_generation/k1.0/19_05_05_20_04_58_leelavathi_k1.0_ls255_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
 
-![Max lattice size = 255, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_04_58_leelavathi_k1.0_ls255_pad1.gif)
+[//]: # "![Max lattice size = 255, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_04_58_leelavathi_k1.0_ls255_pad1.gif)"
+- Max lattice size = 511, k = 1.0, Pad size = 1 : ![Max lattice size = 511, k = 1.0, Pad size = 1](runs/part03_brownian_tree_generation/k1.0/19_05_05_20_21_19_leelavathi_k1.0_ls511_pad1/Brownian_Tree_Images/Brownian_Tree.gif)
+
+[//]: # "![Max lattice size = 511, k = 1.0, Pad size = 1.](images/videos_brownian_motion/part03_brownian_tree_generation/19_05_05_20_04_58_leelavathi_k1.0_ls255_pad1.gif)"
 
 Due to the scale invariance property of Brownian trees, The structure in which tree the grow is the same as far as the stickiness is fixed.
 
