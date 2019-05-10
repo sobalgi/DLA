@@ -28,7 +28,8 @@ You will need:
 
 On Linux:
 
-```> conda install pytorch torchvision cudatoolkit=9.0 -c pytorch```
+- for CPU enabled PyTorch : ```> conda install pytorch-cpu torchvision-cpu -c pytorch```
+- for GPU enabled PyTorch : ```> conda install pytorch torchvision cudatoolkit=9.0 -c pytorch```
 
 ### OpenCV with Python bindings
 
@@ -38,7 +39,7 @@ On Linux, install using `conda`:
 
 ### The rest
 
-Use pip like so:
+Use pip install other dependencies using command below:
 
 ```> pip install -r requirements.txt```
 
@@ -64,7 +65,7 @@ The file includes some of the samples images so that the model can be quickly tr
 ## Brownian Tree Formation
 - Start with an empty lattice with only one seed particle at the center which is stuck.
 - Start diffusing particles, one at a time, randomly along a given locus. The locus can be along the edges of a square or circumference of the circle etc.
-\item The diffused particle is allowed to undergo random walk ( Brownian motion ) until it encounters a neighbouring particle which is stuck and hence the current particle sticks as well.
+- The diffused particle is allowed to undergo random walk ( Brownian motion ) until it encounters a neighbouring particle which is stuck and hence the current particle sticks as well.
 - This process is continued until the diffusion locus is exhausted by the tree growth.
 
 ## Factors affecting the formation of Brownian trees
